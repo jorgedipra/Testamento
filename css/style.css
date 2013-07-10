@@ -181,19 +181,20 @@ a{
 	width   : 95%;
 }
 #iFrame_SQL{
-	width: 95%;
-	position: absolute;
-	height: 80%;
-	z-index: 99999;
-	left: 2.5%;
-	right: 2.5%;
-	display: none;
-	top: 100px;
-    border: solid 1px #fff;
+	background: #fff;
+	border    : solid 1px #fff;
+	display   : none;
+	height    : 80%;
+	left      : 2.5%;
+	position  : absolute;
+	right     : 2.5%;
+	top       : 100px;
+	width     : 95%;
+	z-index   : 99999;
 }
 #iFrameoCerar{
-	top:105px;
-	right: 33px;
+	display   : none;
+	right     : 33px;
 	text-align: center;
-	display: none;
+	top       :105px;
 }

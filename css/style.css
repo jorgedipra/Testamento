@@ -1,0 +1,12 @@
+body{
+	background : url(../img/fondo.png)fixed;
+	font-family: 'Germania One', cursive;
+	height     : 100%;
+	left       : 0;
+	margin     : 0;
+	padding    : 0;
+	position   : absolute;
+	position   : fixed;
+	top        :0;
+	width      : 100%;  
+}

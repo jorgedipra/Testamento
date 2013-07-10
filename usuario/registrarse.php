@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/styleregi.css" />
 <?php 
   include_once('../conexion/php/operacionesSql.php');
  $objopera  =  new operaciones();

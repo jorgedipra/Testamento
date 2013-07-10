@@ -12,6 +12,7 @@ $("#BtnRegis").click(function () {
       $("#iFrame_SQL").show();
       $("#iFrameoCerar").show();
       $("#logeo").hide();
+      $("#pregunta").hide();
 
 });
 $('li').click(function () {

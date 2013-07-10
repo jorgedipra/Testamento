@@ -21,7 +21,7 @@
     <br>
     <label>Clave</label>
     <input name="clave" type="password" required>
-     
+    <input type="submit" value="registrarse">
 </form>
     
     

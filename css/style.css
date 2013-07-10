@@ -87,29 +87,64 @@ a{
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.4);
 }
+#Btnsub{
+	background: -moz-linear-gradient(
+		top,
+		#ff0f1f 0%,
+		#c10000);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ff0f1f),
+		to(#c10000));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #c10000;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	color      : #ffffff;
+	cursor        : pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size  : 16px;
+	padding    : 10px 20px;
+	margin-top: 10px;
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
 #pregunta{
 	background   : #fff;
-	border       : solid;
-	border-radius: 20px;
-	padding      : 20px;
-	position     : fixed;
-	right        : 100px;
+	border-radius: 5px;
+	padding: 5px;
+	width: 95%;
+	position     : relative;
+	margin: 10px auto;
 	text-align   : center;
-	top          : 200px;
-	display: none;
+	z-index: 99999;
 }
 #logeo{
-	background   : #fff;
-	border       : solid;
-	border-radius: 20px;
-	padding      : 20px;
-	position     : fixed;
-	right        : 100px;
-	text-align   : center;
-	top          : 70px;
-	display: none;
+	background    : #fff;
+	border        : solid;
+	border-radius : 20px;
+	display       : none;
+	padding-bottom: 10px;
+	padding-left  : 20px;
+	padding-right : 20px;
+	padding-top   : 20px;
+	position      : fixed;
+	right         : 100px;
+	text-align    : center;
+	top           : 70px;
+	z-index       : 999999;
 }
-#logeoCerar{
+.logeoCerar{
 	background   : rgba(0,0,0,0.7);
 	border       : solid;
 	border-radius: 50px;
@@ -129,3 +164,4 @@ a{
 	top: 100px;
 	width: 95%;
 }
+

@@ -40,7 +40,7 @@
 </div>
 
 <section id="logeo">
-    <div id="logeoCerar">X</div>
+    <div id="logeoCerar" class="logeoCerar">X</div>
     <form action="index.php" method="post">
         <label>Nick: </label>
         <input name="nick" type="text" required>
@@ -49,12 +49,13 @@
         <input name="clave" type="password" required>
         <br>
         <center>
-        <input name="enviar" type="submit" value="enviar">
+        <input id="Btnsub" name="enviar" type="submit" value="enviar">
         </center>
     </form>
 </section>
 
 <article id="pregunta">
+    <div id="preguntaCerar" class="logeoCerar">X</div>
       <form action="index.php" method="post">
     	<label>Asunto</label>
     	<input type="text" name="asunto">

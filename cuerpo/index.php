@@ -9,8 +9,7 @@
     <li><a href="#tabs-2">VISION</a></li>
     <li><a href="#tabs-3">MISION</a></li>
     <li><a href="#tabs-4">SERVICIO</a></li>
-    <li><a href="#tabs-5">DESCRIPCION DEL SERVICIO</a></li>
-    <li><a href="#tabs-6">AYUDA</a></li>
+    <li><a href="#tabs-5">AYUDA</a></li>
   </ul>
   <div id="tabs-1">
     <p>
@@ -35,11 +34,6 @@
   <div id="tabs-5">
     <p>
         5
-    </p>
-  </div>
-  <div id="tabs-6">
-    <p>
-        6
     </p>
   </div>
 </div>

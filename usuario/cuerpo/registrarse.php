@@ -13,7 +13,8 @@
     <p>
         <label>Edad &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>&nbsp;<input name="edad" required="" type="number" /></p>
     <p>
-        <label>Sexo</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="sexo" required="" type="radio" value="M" />M &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="sexo" required="" type="radio" value="F" />&nbsp;F</p>
+        <label>Sexo</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="sexo" required="" type="radio" value="M" />M &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="sexo" required="" type="radio" value="F" />&nbsp;F&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</p>
+
     <p>
         <label>Clave &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>&nbsp;<input name="clave" required="" type="password" />&nbsp;</p>
 </div>   

@@ -10,6 +10,7 @@
     <li><a href="#tabs-3">MISION</a></li>
     <li><a href="#tabs-4">SERVICIO</a></li>
     <li><a href="#tabs-5">AYUDA</a></li>
+
   </ul>
   <div id="tabs-1">
     <p>
@@ -37,18 +38,23 @@
     </p>
   </div>
 </div>
-<!--logeo-
+
 <section id="logeo">
-	<form action="index.php" method="post">
-		<label>Nick</label>
-		<input name="nick" type="text" required>
-		<br>
-		<label>Clave</label>
-		<input name="clave" type="password" required>
-	</form>
+    <div id="logeoCerar">X</div>
+    <form action="index.php" method="post">
+        <label>Nick: </label>
+        <input name="nick" type="text" required>
+        <br>
+        <label>Clave:</label>
+        <input name="clave" type="password" required>
+        <br>
+        <center>
+        <input name="enviar" type="submit" value="enviar">
+        </center>
+    </form>
 </section>
-<section>
-    <article id="pregunta">
+
+<article id="pregunta">
       <form action="index.php" method="post">
     	<label>Asunto</label>
     	<input type="text" name="asunto">
@@ -60,10 +66,5 @@
     	<input name="correo" type="email" required>
     	<input type="submit" value="Preguntar">
       </form>	
-    </article>
-    <article id="video">
-    	<video controls>
-
-    	</video>
-    </article>
-</section>
+</article>
+    

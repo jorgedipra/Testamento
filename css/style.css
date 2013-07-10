@@ -1,12 +1,11 @@
 body{
 	background : url(../img/fondo.png)fixed;
 	font-family: 'Germania One', cursive;
-	height     : 100%;
+	min-height: 800px;
 	left       : 0;
 	margin     : 0;
 	padding    : 0;
 	position   : absolute;
-	position   : fixed;
 	top        :0;
 	width      : 100%;  
 }
@@ -87,6 +86,42 @@ a{
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.4);
+}
+#pregunta{
+	background   : #fff;
+	border       : solid;
+	border-radius: 20px;
+	padding      : 20px;
+	position     : fixed;
+	right        : 100px;
+	text-align   : center;
+	top          : 200px;
+	display: none;
+}
+#logeo{
+	background   : #fff;
+	border       : solid;
+	border-radius: 20px;
+	padding      : 20px;
+	position     : fixed;
+	right        : 100px;
+	text-align   : center;
+	top          : 70px;
+	display: none;
+}
+#logeoCerar{
+	background   : rgba(0,0,0,0.7);
+	border       : solid;
+	border-radius: 50px;
+	color        : #fff;
+	cursor       : pointer;
+	height       : 25px;
+	margin-right : -10px;
+	margin-top   : -10px;
+	position     : absolute;
+	right        : 0;
+	top          : 0;
+	width        : 25px;
 }
 #tabs{
 	position: relative;

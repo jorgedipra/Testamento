@@ -1,5 +1,13 @@
-<?php 
+<?php
+ include_once ('recursos/info.php');//se llama la informacion de la pagina
 session_start();
+?>
+<link rel="stylesheet" href="css/style.css"><!--se llama el stilo-->
+<script src="script/scriptpins.js"></script>
+<title> </title>
+</head>
+<body>
+<?php
 include_once('conexion/php/operacionesSql.php');
   $objopera  =  new operaciones();
   if(isset($_POST['nick'])){
@@ -13,13 +21,13 @@ include_once('conexion/php/operacionesSql.php');
             else{
             	header('location: administrador/administradorprincipal.php');
             }
-        }
-     
+        }     
   }
    if(isset($_POST['asunto'])){
 	  $consul="INSERT INTO Pregunta(PreAsunto,PreDescipcion,PreCorreo)VALUES('".$_POST['asunto']."','".$_POST['pregunta']."','".$_POST['correo']."')";
 	  $objopera->insertar($consul);
 	}
-include_once('cuerpo/index.php');
-
+  include_once('cuerpo/index.php');
 ?>
+</body>
+</html>

@@ -184,11 +184,11 @@ a{
 	background: #fff;
 	border    : solid 1px #fff;
 	display   : none;
-	height    : 80%;
+	height    : 75%;
 	left      : 2.5%;
 	position  : absolute;
 	right     : 2.5%;
-	top       : 100px;
+	top       : 150px;
 	width     : 95%;
 	z-index   : 99999;
 }
@@ -196,5 +196,5 @@ a{
 	display   : none;
 	right     : 33px;
 	text-align: center;
-	top       :105px;
+	top       :155px;
 }

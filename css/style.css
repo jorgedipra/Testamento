@@ -122,12 +122,27 @@ a{
 #pregunta{
 	background   : #fff;
 	border-radius: 5px;
-	padding: 5px;
-	width: 95%;
+	margin       : 10px auto;
+	padding      : 5px;
 	position     : relative;
-	margin: 10px auto;
 	text-align   : center;
-	z-index: 99999;
+	width        : 95%;
+	z-index      : 99999;
+}
+#precues{
+	padding-bottom: 10%;
+	padding-top   : 10%;
+	width         : 49%;
+}
+#precuesimg{
+	height        : 50%;
+	padding-bottom: 10%;
+	padding-top   : 10%;
+	position      : absolute;
+	right         : 5px;
+	text-align    : left;
+	top           : 5px;
+	width         : 49%;
 }
 #logeo{
 	background    : #fff;
@@ -157,11 +172,12 @@ a{
 	right        : 0;
 	top          : 0;
 	width        : 25px;
+    z-index       : 99999;
 }
 #tabs{
+	margin  : 0 auto;
 	position: relative;
-	margin: 0 auto;
-	top: 100px;
-	width: 95%;
+	top     : 100px;
+	width   : 95%;
 }
 

@@ -27,7 +27,7 @@ if(isset($_POST['targeta'])){
 } 
 
 }
-
+$eliminarcliente="DELETE FROM abogados WHERE AbgId=''";
 $buscarabg="SELECT * FROM testamento.abogados";  	
 $resuabg=$objopera->buscar($buscarabg);
   

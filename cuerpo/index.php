@@ -1,4 +1,4 @@
-<a href="#" onclick="javascript:fun_iFrameWrite('iFrame_SQL','url')" id="BtnRegis">REGISTRARSE</a>
+<a href="#" onclick="javascript:fun_iFrameWrite('iFrame_SQL','usuario/registrarse.php')" id="BtnRegis">REGISTRARSE</a>
 <a href="#" id="BtnIngres" >INGRESAR</a>
 
 

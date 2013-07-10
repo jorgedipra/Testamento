@@ -25,11 +25,25 @@ ABOGADOS
    </section>
    <section id="verabogados">
    		Ver Abogados
-   		<img src="">
-   		<br>
-   		<label>Nombre</label>
-   		<label>Juan</label>
+   		<?php 
+         while($res=$resuabg->fetch_assoc())
+           {
+           	?>
+           			 <img src="<?php echo $res['AbgFoto']; ?>">
+   		             <br>
+   		             <label>Nombre</label>
+   		             <label><?php echo  $res['AbgNombre']; ?></label>
+        			 <label>Perfil</label>
+                     <textarea><?php echo  $res['AbgPerfil']; ?></textarea>
+                     <input type="hidden" id="eliminarabg" value="<?php echo  $res['AbgId']; ?>">
+                     <div id="eliminar">
+        	              <a href="#" onclick="<script> </script>">Eliminar</a>
+                     </div>
 
+           	<?php
+           }
+   		?>
+   	
 
    </section>
 </article>

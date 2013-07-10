@@ -1,4 +1,4 @@
-<a href="#" id="BtnRegis">REGISTRARSE</a>
+<a href="#" onclick="javascript:fun_iFrameWrite('iFrame_SQL','url')" id="BtnRegis">REGISTRARSE</a>
 <a href="#" id="BtnIngres" >INGRESAR</a>
 
 
@@ -49,7 +49,7 @@
         <input name="clave" type="password" required>
         <br>
         <center>
-        <input id="Btnsub" name="enviar" type="submit" value="enviar">
+        <input id="Btnsub" name="enviar" type="submit" value="Ingresar">
         </center>
     </form>
 </section>
@@ -69,4 +69,7 @@
      <iframe width="560" height="315" src="//www.youtube.com/embed/vxb8UONOwpY" frameborder="0" allowfullscreen></iframe>
  </div> 
 </article>
+<iframe id="iFrame_SQL" name="iFrame_SQL">
     
+</iframe>
+<div id="iFrameoCerar" class="logeoCerar">X</div>

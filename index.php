@@ -24,7 +24,7 @@ include_once('conexion/php/operacionesSql.php');
        while($res=$notifi->fetch_assoc()){
           $_SESSION['Nombre']=$res['UsrNombre'];
           if($res['TpIdUsrd']==1){
-                header('locatio: clientes/clientesprincipal.php');
+                header('location: clientes/clientesprincipal.php');
             }
             else{
             	header('location: administrador/administradorprincipal.php');

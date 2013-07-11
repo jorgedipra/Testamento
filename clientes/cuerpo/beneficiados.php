@@ -41,14 +41,14 @@ MIS BENEFICIADOS
            {
         ?>
     <label>Nombre Beneficido</label>
-    <label><?php echo $res['AchId'];?></label>
-     <label>Bienes</label>
-    <section id="bienes" name="bienes">
-  	<option value="">...</option>
-    </section> 
+    <label><?php echo $res['BenNombre'];?></label>
+     <label>Bienen</label>
+     <label><?php echo $res['AchNombre'];?> </label>
+      
     <br>
-    <input type="submit" value="Eliminar">
+    <input type="hidden" value="Eliminar">
     <?php
         }
     ?>
 </section>
+

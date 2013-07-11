@@ -15,7 +15,8 @@
          $objopera->insertar($conbenarchivo);
      }
   }
-$verarchivos="SELECT * FROM testamento.archivo";
+$verarchivos="SELECT BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
+WHERE beneficiario.BenId = beneficiarioarchivo.BenId and beneficiarioarchivo.AchId = archivo.AchId ";
 $verarchi=$objopera->buscar($verifiacar);
 $ver2=$objopera->buscar($verbene);
 include_once('cuerpo/beneficiados.php') 

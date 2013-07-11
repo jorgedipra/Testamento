@@ -14,13 +14,14 @@
   </ul>
   <div id="tabs-1">
     <p>
-        1
+     
+       <iframe width="100%" height="500px" id="frame" src="cuerpo/index1.php" scrolling="No" frameborder="0" allowfullscreen></iframe> 
     </p>
   </div>
   <div id="tabs-2">
-    <p>
+   <p>
         2
-    </p>
+    </p> 
   </div>
   <div id="tabs-3">
     <p>

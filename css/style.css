@@ -122,9 +122,12 @@ a{
 #pregunta{
 	background   : #fff;
 	border-radius: 5px;
-	margin       : 10px auto;
+	margin       : 0;
 	padding      : 5px;
-	position     : relative;
+	top:155px;
+	left: 2%;
+	right:2.5%;
+	position     : absolute;
 	text-align   : center;
 	width        : 95%;
 	z-index      : 99999;
@@ -153,7 +156,7 @@ a{
 	padding-left  : 20px;
 	padding-right : 20px;
 	padding-top   : 20px;
-	position      : absolute;
+	position      : fixed;
 	right         : 100px;
 	text-align    : center;
 	top           : 70px;

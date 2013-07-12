@@ -28,7 +28,7 @@ include_once('conexion/php/operacionesSql.php');
                 header('location: clientes/clientesprincipal.php');
             }
             else{
-            	header('location: administrador/administradorprincipal.php');
+            	//header('location: administrador/administradorprincipal.php');
             }
         }     
   }

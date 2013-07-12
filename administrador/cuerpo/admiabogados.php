@@ -2,7 +2,7 @@ ABOGADOS
 
 <article>
    <section id="añadirabogado">
-       <form action="admiabogados.php">
+       <form action="admiabogados.php" method="post" enctype="multipart/form-data">
        		<label>Nombre</label>
        		<input name="nomabo" type="text">
        		<br>

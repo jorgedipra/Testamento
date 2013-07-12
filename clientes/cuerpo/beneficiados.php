@@ -9,8 +9,9 @@ MIS BENEFICIADOS
     <label>Nombre</label>
     <input name="nobene" type="text">
     <br>
-    <label>Cedula</label>
+    <label>Cedula</label> 
     <input name="cocedula" type="text">
+       <br>
     <label>Correo</label>
     <input name="cobene" type="email" required="email">
     <br>
@@ -18,8 +19,7 @@ MIS BENEFICIADOS
     <input name="telefono" type="number" required="number">
     <br>
     <label>Bienes</label>
-    <section id="bienes" name="bienes">
-          
+          <select id="bienes" name="bienes">
   		<option >N/A</option>
         <?php 
            while($res=$verarchi->fetch_assoc())
@@ -29,26 +29,35 @@ MIS BENEFICIADOS
         <?php
           }
         ?>
-    </section>  
+        </select>
+         <input type="submit" value="insertar"> 
     </form>
 </section>
+
 <section id="verbene">
     Ver Beneficiados
     <br>
     <br>
      <?php 
-           while($res=$ver2->fetch_assoc())
-           {
+             $verbeneficiado="SELECT BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
+WHERE beneficiario.BenId = beneficiarioarchivo.BenId and beneficiarioarchivo.AchId = archivo.AchId ";
+$verarchi=$objopera->buscar($verbeneficiado);
+     while($res2=$verarchi->fetch_assoc())
+    {
+            
         ?>
     <label>Nombre Beneficido</label>
-    <label><?php echo $res['BenNombre'];?></label>
+    <label><?php echo $res2['BenNombre'];?></label>
+    <br>
      <label>Bienen</label>
-     <label><?php echo $res['AchNombre'];?> </label>
+     <label><?php echo $res2['AchNombre'];?></label>
       
     <br>
-    <input type="hidden" value="Eliminar">
+    <a href="#">Eliminar</a>
+     <br>
     <?php
         }
     ?>
+   
 </section>
 

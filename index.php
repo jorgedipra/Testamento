@@ -2,17 +2,18 @@
  include_once ('recursos/info.php');//se llama la informacion de la pagina
 session_start();
 ?>
+<link rel="shortcut icon" href="img/h1.ico" />
 <link rel="stylesheet" href="css/style.css"><!--se llama el stilo-->
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="script/jquery-1.9.1.js"></script>
+  <script src="script/jquery-ui.js"></script>
   <script src="script/script.js"></script>
   <script>
   $(function() {
     $( "#tabs" ).tabs();
   });
   </script>
-<title> </title>
+<title>Testamento</title>
 </head>
 <body>
 <?php

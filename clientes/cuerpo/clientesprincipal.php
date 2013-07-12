@@ -11,9 +11,9 @@
 	<li id="completexta">
 		<h3>Completar Testamento</h3>
 	</li>
-	<li id="clear" clss="clear">
+	<li id="clear1" clss="clear">
 		<h3></h3>
-	</li>
+	</li> 
 	<li id="misbienes">
 		<h3>Mis Bienes</h3>
 	</li>

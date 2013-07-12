@@ -21,6 +21,7 @@
 	background: #D74450;
 	font-size: 31px;
 }
+#clear1,
 #clear{
 	width: 25%;	
 	background: rgba(0,0,0,0);
@@ -33,6 +34,7 @@
 	margin: 150px auto;
 	margin-left: -15px;
 }
+#clear1:hover,
 #clear:hover {
 	border: none;
 	
@@ -43,8 +45,8 @@
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
-.clear:hover li:not(:hover) {
-	opacity: 1;
+#clear1 {
+  height: 0px;
 }
 body {
 	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
@@ -60,14 +62,14 @@ html{
 ul {
 	list-style: none;
 	width: 95%;
-	margin: 5% auto;
+	margin: 5% -50px;
 	position: relative;
 }
 
 li {
 	width: 25%;
 	height: 300px;
-	float: left;
+	float: right;
 	margin: 0 40px 40px 0;
 	border-radius: 5px;
 	padding: 10px;	

@@ -20,6 +20,7 @@ ABOGADOS
             <br>
             <label>Perfil</label>
             <textarea name="perfilabg"></textarea>
+            <br>
             <input id="btninsert" type="submit" value="Añadir">
        </form>
    </section>
@@ -33,6 +34,7 @@ ABOGADOS
    		             <br>
    		             <label>Nombre</label>
    		             <label><?php echo  $res['AbgNombre']; ?></label>
+                   <br>
         			 <label>Perfil</label>
                      <textarea><?php echo  $res['AbgPerfil']; ?></textarea>
                      <input type="hidden" id="eliminarabg" value="<?php echo  $res['AbgId']; ?>">

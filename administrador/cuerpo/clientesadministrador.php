@@ -6,7 +6,7 @@ Cliente
     	?>
     		Nombre <label><?php echo $res['UsrNombre']; ?></label>
             <br>
-            Correo <label><?php echo $res['Correo']; ?></label>
+            Correo <label><?php echo $res['UsrCorreo']; ?></label>
             <br>
             <br>
     	<?php
@@ -15,5 +15,5 @@ Cliente
 ?>
 Numero de Clientes
 <?php 
-echo $adminnumero;
+echo   $res1;
 ?>

@@ -16,15 +16,20 @@ if(isset($_POST['targeta'])){
      $inabogados="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbTargeta,AbgFoto,AbgPerfil)
      VALUES('".$_POST['nomabo']."','".$_POST['telabo']."','".$_POST['correoabg']."','".$_POST['targeta']."','".$destinoF."','".$_POST['perfilabg']."')";
      $objoper->insertar($inabogados);
-    
+      echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
                               }  
   else{
   	$inseaboaux="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbTargeta,AbgPerfil)
    VALUES('".$_POST['nomabo']."','".$_POST['telabo']."','".$_POST['correoabg']."','".$_POST['targeta']."','".$_POST['perfilabg']."')";
     $objoper->insertar($inseaboaux);
+      echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
   }
 
 } 
+else
+{
+    echo " <script type='text/javascript'> alert('YA Existe');</script>";
+}
 
 }
 $eliminarcliente="DELETE FROM abogados WHERE AbgId=''";

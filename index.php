@@ -20,16 +20,18 @@ session_start();
 include_once('conexion/php/operacionesSql.php');
   $objopera  =  new operaciones();
   if(isset($_POST['nick'])){
-       $logeo="SELECT * FROM testamento.usuario";
+       $logeo="SELECT * FROM testamento.usuario WHERE UsrNick='".$_POST['nick']."' and UsrClave='".$_POST['clave']."'";
        $notifi=$objopera->buscar($logeo);
        while($res=$notifi->fetch_assoc()){
           $_SESSION['Nombre']=$res['UsrNombre'];
           if($res['TpIdUsrd']==1){
+                echo "hola";
                 header('location: clientes/clientesprincipal.php');
             }
             elseif($res['TpIdUsrd']==2)
-            {
-            	//header('location: administrador/administradorprincipal.php');
+            { echo "hola";
+            	header('location: administrador/administradorprincipal.php');
+
             }
             else  {
                echo " <script type='text/javascript'> alert('Usuario No registrado');</script>";

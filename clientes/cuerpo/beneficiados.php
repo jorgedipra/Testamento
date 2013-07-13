@@ -34,6 +34,7 @@ MIS BENEFICIADOS
     </form>
 </section>
 
+Ver Beneficiados
 <section id="verbene">
     Ver Beneficiados
     <br>

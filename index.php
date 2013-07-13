@@ -27,9 +27,15 @@ include_once('conexion/php/operacionesSql.php');
           if($res['TpIdUsrd']==1){
                 header('location: clientes/clientesprincipal.php');
             }
-            else{
+            elseif($res['TpIdUsrd']==2)
+            {
             	//header('location: administrador/administradorprincipal.php');
             }
+            else  {
+               echo " <script type='text/javascript'> alert('Usuario No registrado');</script>";
+                              
+                              }  
+            
         }     
   }
    if(isset($_POST['asunto'])){

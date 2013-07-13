@@ -21,12 +21,23 @@ MIS BIENES
 <section id="verBienes">
 	Ver Bienes
 	 <br>	
-	<label>Nombre</label>
-	<label>caha</label>
+	 <?php
+	 $i=0;
+         while($res=$archivos->fetch_assoc())
+    {
+	  ?>
+	<label>Nombre:</label>
+	<label><?php echo $res['AchNombre'];?></label>
 	<br>
-	<label>Descripcion</label>
+	<label>Descripcion:</label>
 	<textarea>
-      
+      <?php  echo $res['AchDescripcion'];?>
 	</textarea>
-
+	<br>
+	<input  type="hidden" value="">
+	<a id="elimarchiva<?php echo $i;?>" href="#">Eliminar</a>
+   <?php 
+  $i++;
+    }
+    ?>
 </section>

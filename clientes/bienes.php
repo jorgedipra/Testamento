@@ -11,14 +11,17 @@
     
      $inserbien="INSERT INTO archivo(AchNombre,AchDescripcion,AchUrl)VALUES('".$_POST['nobien']."','".$_POST['descricion']."','".$destinoF."')";
      $objopera->insertar($inserbien);
-    
+     echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
                               }  
           else{
   	$inseaboaux="INSERT INTO Abogados(AchNombre,AchDescripcion)
    VALUES('".$_POST['nobien']."','".$_POST['descricion']."')";
     $objoper->insertar($inseaboaux);
+     echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
      }
 
   }
+  $archivover="SELECT * FROM archivo";
+   $archivos=$objopera->buscar($archivover);
   include_once('cuerpo/bienes.php');
 ?>

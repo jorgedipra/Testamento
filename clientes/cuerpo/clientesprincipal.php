@@ -1,6 +1,6 @@
 <ul>
 	<li id="Abogados">
-		<h3>Abogados</h3>
+		<h3> <a href="clienteAbogados.php">Abogados</a></h3>
 	</li>
 	<li id="clear">	
 <img id="ico" src="../img/icono.png" alt="Testamento">

@@ -5,6 +5,7 @@
 
 
   $verarchivo="SELECT * FROM testamento.archivo";
+ $vienes=$objopera->buscar($verarchivo);
   if(isset($_POST['cocedula'])){
   	  $verifiacar="SELECT * FROM testamento.beneficiario WHERE BenCedula='".$_POST['cocedula']."'";
   	  $ver=$objopera->buscar($verifiacar);

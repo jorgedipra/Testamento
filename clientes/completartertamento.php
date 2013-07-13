@@ -7,7 +7,7 @@
   	 $objopera->insertar($cuenta);
   }
  $buscar="SELECT * FROM testamento.cuenta";
-  $objopera->buscar($buscar);
+ $resultado=$objopera->buscar($buscar);
 	include_once('cuerpo/completartestamento.php');
 	
 ?>

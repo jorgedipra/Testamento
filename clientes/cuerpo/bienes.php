@@ -9,12 +9,17 @@
   <br>
   <br>
 	 <form action="bienes.php" method="post" enctype="multipart/form-data">
-      <label>Nombre</label>
+      <label>Nombre</label>&nbsp; &nbsp;&nbsp; &nbsp;
       <input name="nobien" type="text">
       <br>
       <br>
-      <label>Archivo</label>
-      <input name="urlbien" type="file">
+      <br>
+      <label>Archivo</label>&nbsp; &nbsp;&nbsp; &nbsp;
+      <label class="button file">:: Seleccionar Archivo ::</label>
+      <input name="urlbien"  class="filef" type="file">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <br>
       <br>
       <br>
       <label>Descripcion</label>

@@ -27,9 +27,9 @@ COMPLETAR TESTAMENTO
     while($res=$resul->fetch_assoc())
            {
          ?>
-     <option value="<?php echo $res['BenId'];?>" >
+     <option value="<?php echo $res['BenNombre'];?>" >
         <?php echo $res['BenNombre'];   ?>
-     </option>
+     </option> 
     <?php
 
             } 
@@ -59,7 +59,7 @@ COMPLETAR TESTAMENTO
        <label><?php echo $res['CntClave'];?></label>
        <br>
         <input type="hidden" id="idcuenta" value="<?php echo $res['CntId'];?>">
-       <a href="#">Eliminar</a>
+       <a href="#" onClick="borrar(<?php echo $res['CntId'];?>)">Eliminar</a>
        <?php
 
        }

@@ -55,8 +55,8 @@
       <?php  echo $res['AchDescripcion'];?>
 	</textarea>
 	<br>
-	<input  type="hidden" value="">
-	<a id="elimarchiva<?php echo $i;?>"  class="button" href="#">Eliminar</a>
+	<input  type="hidden" id="<?php echo $res['AchId'];?>" value="<?php $res['AchId'];?>">
+	<a  class="button" href="#" onClick="borrar(<?php echo $res['AchId'];?>)">Eliminar</a>
    </li>
    <?php 
   $i++;

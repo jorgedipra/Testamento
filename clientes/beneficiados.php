@@ -15,6 +15,15 @@ session_start();
         });
       });
       </script>
+ <script type="text/javascript">
+  function borrar(id){
+    alert(document.getElementById(id).value);
+  if (confirm('¿Estas seguro que desea borrar este Beneficiario?')){ 
+
+      location.href = "beneficiados.php?id="+document.getElementById(id).value;
+    } 
+}    
+</script>
 <title>MIS BENEFICIADOS</title>
 <?php 
   include_once('../conexion/php/operacionesSql.php');
@@ -38,6 +47,14 @@ session_start();
     else{
       echo " <script type='text/javascript'> alert('YA Existe');</script>";
     }
+  }
+  
+  if(isset($_GET['id'])){
+        $eliminar="DELETE FROM testamento.beneficiarioarchivo WHERE BenId='".$_GET['id']."'";
+        $objopera->insertar($eliminar);
+        $eliminarben="DELETE FROM testamento.beneficiario WHERE BenId='".$_GET['id']."'";
+        $objopera->insertar($eliminarben);
+
   }
 include_once('cuerpo/beneficiados.php');
 ?>  

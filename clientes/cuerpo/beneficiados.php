@@ -49,7 +49,7 @@
     <div id="paging_container7">
       <ul class="content">
      <?php 
-            $verbeneficiado="SELECT BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
+            $verbeneficiado="SELECT beneficiario.BenId,BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
 WHERE beneficiario.BenId = beneficiarioarchivo.BenId and beneficiarioarchivo.AchId = archivo.AchId ";
 $verarchi=$objopera->buscar($verbeneficiado);
      while($res2=$verarchi->fetch_assoc())
@@ -62,9 +62,9 @@ $verarchi=$objopera->buscar($verbeneficiado);
     <br><br>
      <label>Bienen</label>
      <label><?php echo $res2['AchNombre'];?></label>
-      
+      <input  id="<?php echo $res2['BenId'];?>" type="hidden" value="<?php echo $res2['BenId'];?>">
     <br><br>
-    <a href="#" class="button" >Eliminar</a>
+    <a href="#" class="button" onClick="borrar(<?php echo $res2['BenId']; ?>)" >Eliminar</a>
       </li>
     <?php
         }

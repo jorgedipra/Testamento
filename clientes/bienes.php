@@ -15,6 +15,17 @@ session_start();
         });
       });
       </script>
+
+  <script type="text/javascript">
+  function borrar(id){
+    alert(document.getElementById(id).value);
+  if (confirm('¿Estas seguro que desea borrar este Bien?')){ 
+
+      location.href = "bienes.php?id="+document.getElementById(id).value;
+    } 
+}    
+</script>
+
 <title>MIS BIENES</title>
 <?php 
  include_once('../conexion/php/operacionesSql.php');
@@ -32,11 +43,19 @@ session_start();
      echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
                               }  
           else{
-  	$inseaboaux="INSERT INTO Abogados(AchNombre,AchDescripcion)
+  	$inseaboaux="INSERT INTO archivo(AchNombre,AchDescripcion)
    VALUES('".$_POST['nobien']."','".$_POST['descricion']."')";
     $objoper->insertar($inseaboaux);
      echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
      }
+
+  }
+
+  if(isset($_GET['id'])){
+        $eliminar="DELETE FROM testamento.beneficiarioarchivo WHERE AchId='".$_GET['id']."'";
+        $objopera->insertar($eliminar);
+        $eliminarben="DELETE FROM testamento.archivo WHERE AchId='".$_GET['id']."'";
+        $objopera->insertar($eliminarben);
 
   }
   $archivover="SELECT * FROM archivo";

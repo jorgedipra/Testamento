@@ -37,9 +37,9 @@ ABOGADOS
                    <br>
         			 <label>Perfil</label>
                      <textarea><?php echo  $res['AbgPerfil']; ?></textarea>
-                     <input type="hidden" id="eliminarabg" value="<?php echo  $res['AbgId']; ?>">
+                     <input type="hidden" id="<?php echo  $res['AbgId']; ?>" value="<?php echo  $res['AbgId']; ?>">
                      <div id="eliminar">
-        	              <a href="#" onclick="<script> </script>">Eliminar</a>
+        	              <a href="#" onclick="borrar(<?php echo  $res['AbgId']; ?>)">Eliminar</a>
                      </div>
 
            	<?php

@@ -1,3 +1,20 @@
+<?php
+ include_once ('../recursos/info.php');//se llama la informacion de la pagina
+session_start();
+?>
+
+
+ <script type="text/javascript">
+  function borrar(id){
+    alert(document.getElementById(id).value);
+  if (confirm('¿Estas seguro que desea borrar este Beneficiario?')){ 
+
+      location.href = "admiabogados.php?id="+document.getElementById(id).value;
+    } 
+}    
+</script>
+
+
 <?php 
  include_once('../conexion/php/operacionesSql.php');
   $objopera  =  new operaciones();
@@ -35,7 +52,11 @@ else
 $eliminarcliente="DELETE FROM abogados WHERE AbgId=''";
 $buscarabg="SELECT * FROM testamento.abogados";  	
 $resuabg=$objopera->buscar($buscarabg);
-  
+    if(isset($_GET['id'])){
+        $eliminarben="DELETE FROM testamento.abogados WHERE AbgId='".$_GET['id']."'";
+        $objopera->insertar($eliminarben);
+
+  }
 include_once('cuerpo/admiabogados.php');
 
 ?>

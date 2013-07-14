@@ -46,14 +46,18 @@
    <h2> Ver Beneficiados</h2>
     <br>
     <br>
+    <div id="paging_container7">
+      <div class="page_navigation"></div>
+      <ul class="content">
      <?php 
             $verbeneficiado="SELECT BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
 WHERE beneficiario.BenId = beneficiarioarchivo.BenId and beneficiarioarchivo.AchId = archivo.AchId ";
 $verarchi=$objopera->buscar($verbeneficiado);
      while($res2=$verarchi->fetch_assoc())
     {
-            
-        ?>
+        
+
+        ?><li>
     <label>Nombre Beneficido</label>
     <label><?php echo $res2['BenNombre'];?></label>
     <br><br>
@@ -62,10 +66,16 @@ $verarchi=$objopera->buscar($verbeneficiado);
       
     <br><br>
     <a href="#" class="button" >Eliminar</a>
-     <br><br><br>
+      </li>
     <?php
         }
+
     ?>
+      </ul>   
+      </div>
    </section>
 </section>
 </article>
+
+         
+      

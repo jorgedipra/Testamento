@@ -5,6 +5,16 @@ session_start();
 <link rel="shortcut icon" href="../img/h1.ico" />
 <link rel="stylesheet" href="../css/style.css"><!--se llama el stilo--> 
 <link rel="stylesheet" href="../css/stylebenef.css"><!--se llama el stilo--> 
+<script src="../script/jquery-1.9.1.js"></script>
+<script src="../script/jquery.pajinate.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $('#paging_container7').pajinate({
+          num_page_links_to_display : 3,
+          items_per_page : 3  
+        });
+      });
+      </script>
 <title>MIS BENEFICIADOS</title>
 <?php 
   include_once('../conexion/php/operacionesSql.php');

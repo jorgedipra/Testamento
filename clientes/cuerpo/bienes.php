@@ -51,7 +51,7 @@
 	</textarea>
 	<br>
 	<input  type="hidden" value="">
-	<a id="elimarchiva<?php echo $i;?>" href="#">Eliminar</a>
+	<a id="elimarchiva<?php echo $i;?>"  class="button" href="#">Eliminar</a>
    </li>
    <?php 
   $i++;

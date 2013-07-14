@@ -1,25 +1,30 @@
-MIS BENEFICIADOS
+<article id="cont">
+<h1>MIS BENEFICIADOS</h1>
+
 
 <section id="agrebene">
-    Agregar Beneficiados
+   <h2>Agregar Beneficiados</h2> 
     <br>
     <br>
     <form action="beneficiados.php" method="post">
-
-    <label>Nombre</label>
+    <label>Nombre:</label>
     <input name="nobene" type="text">
     <br>
-    <label>Cedula</label> 
+    <br>
+    <label>Cedula:</label> 
     <input name="cocedula" type="text">
-       <br>
-    <label>Correo</label>
+    <br>
+    <br>
+    <label>Correo:</label>
     <input name="cobene" type="email" required="email">
     <br>
-    <label>Telefono</label>
+    <br>
+    <label>Telefono:</label>
     <input name="telefono" type="number" required="number">
     <br>
-    <label>Bienes</label>
-          <select id="bienes" name="bienes">
+    <br>
+    <label>Bienes:</label>
+      <select id="bienes" name="bienes">
   		<option >N/A</option>
         <?php 
            while($res=$vienes->fetch_assoc())
@@ -30,14 +35,15 @@ MIS BENEFICIADOS
           }
         ?>
         </select>
-        <br>
-         <input type="submit" value="insertar"> 
+        <br><br><br>
+         <input type="submit" class="button" value="insertar"> 
     </form>
 </section>
-
+<!--   -->
 
 <section id="verbene">
-    Ver Beneficiados
+  <section id="contt">
+   <h2> Ver Beneficiados</h2>
     <br>
     <br>
      <?php 
@@ -50,17 +56,16 @@ $verarchi=$objopera->buscar($verbeneficiado);
         ?>
     <label>Nombre Beneficido</label>
     <label><?php echo $res2['BenNombre'];?></label>
-    <br>
+    <br><br>
      <label>Bienen</label>
      <label><?php echo $res2['AchNombre'];?></label>
       
-    <br>
-    <a href="#">Eliminar</a>
-     <br>
+    <br><br>
+    <a href="#" class="button" >Eliminar</a>
+     <br><br><br>
     <?php
         }
     ?>
-   
+   </section>
 </section>
-
-
+</article>

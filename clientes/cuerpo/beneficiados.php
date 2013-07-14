@@ -47,7 +47,6 @@
     <br>
     <br>
     <div id="paging_container7">
-      <div class="page_navigation"></div>
       <ul class="content">
      <?php 
             $verbeneficiado="SELECT BenNombre,AchNombre FROM (testamento.beneficiario INNER JOIN testamento.beneficiarioarchivo)INNER JOIN testamento.archivo 
@@ -72,7 +71,8 @@ $verarchi=$objopera->buscar($verbeneficiado);
 
     ?>
       </ul>   
-      </div>
+      <div class="page_navigation"></div>
+      </div> 
    </section>
 </section>
 </article>

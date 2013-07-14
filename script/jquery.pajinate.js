@@ -1,13 +1,6 @@
 ;
 (function($) { /*******************************************************************************************/
 	// jquery.pajinate.js - version 0.4
-	// A jQuery plugin for paginating through any number of DOM elements
-	// 
-	// Copyright (c) 2010, Wes Nolte (http://wesnolte.com)
-	// Licensed under the MIT License (MIT-LICENSE.txt)
-	// http://www.opensource.org/licenses/mit-license.php
-	// Created: 2010-04-16 | Updated: 2010-04-26
-	//
 	/*******************************************************************************************/
 
 	$.fn.pajinate = function(options) {
@@ -26,10 +19,10 @@
 			num_page_links_to_display: 20,
 			start_page: 0,
 			wrap_around: false,
-			nav_label_first: 'First',
-			nav_label_prev: 'Prev',
-			nav_label_next: 'Next',
-			nav_label_last: 'Last',
+			nav_label_first: 'Primero',
+			nav_label_prev: 'Anterior',
+			nav_label_next: 'Siguiente',
+			nav_label_last: 'Ultimo',
 			nav_order: ["first", "prev", "num", "next", "last"],
 			nav_label_info: 'Showing {0}-{1} of {2} results',
 			show_first_last: true,

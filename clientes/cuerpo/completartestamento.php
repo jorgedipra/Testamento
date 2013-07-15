@@ -1,3 +1,4 @@
+<a href="clientesprincipal.php">Salir</a>
 COMPLETAR TESTAMENTO
 
 <section id="agrecuenta">

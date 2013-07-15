@@ -1,3 +1,5 @@
+<a href="administradorprincipal.php">Salir</a>
+
 <div id="cliente">
 Cliente
 </div>

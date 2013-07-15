@@ -17,9 +17,12 @@
 
     <p>
         <label>Clave &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>&nbsp;<input name="clave" required="" type="password" />&nbsp;</p>
+        <p>
+        <label>Plazo de Conecion en Dias &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>&nbsp;<input name="plazo" required="" type="text" />&nbsp;</p>
 </div>   
     <input type="submit" id="fomtsub" value="registrarse">
 </form>
+
     
     
 </section>

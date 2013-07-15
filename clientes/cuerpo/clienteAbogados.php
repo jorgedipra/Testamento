@@ -1,3 +1,5 @@
+<a href="clientesprincipal.php">Salir</a>
+
 ABOGADOS
 <?php 
   while($res=$resuabg->fetch_assoc())

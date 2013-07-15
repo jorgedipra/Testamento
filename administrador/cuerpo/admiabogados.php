@@ -1,9 +1,11 @@
+
+<a href="administradorprincipal.php">Salir</a>
 <article id="cont">
 <h1>ABOGADOS</h1>
 
 <section id="agrebene">
 <section id="agrebien">
-  <h2>Agregar Bien</h2> 
+  <h2>Agregar Abogados</h2> 
   <br>
   <br>
   <br>
@@ -44,9 +46,9 @@
 <article id="verbene">
 <section id="verBienes">
   <section id="contt">
-  <h2>Ver Bienes</h2>
+  <h2>Ver Abgados</h2>
     <section id="verabogados">
-      Ver Abogados
+
       <?php 
          while($res=$resuabg->fetch_assoc())
            {

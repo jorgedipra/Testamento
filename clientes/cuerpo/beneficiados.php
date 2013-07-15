@@ -1,3 +1,5 @@
+
+<a href="clientesprincipal.php">Salir</a>
 <article id="cont">
 <h1>MIS BENEFICIADOS</h1>
 

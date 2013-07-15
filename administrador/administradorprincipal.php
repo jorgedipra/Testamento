@@ -5,7 +5,12 @@ session_start();
 <link rel="shortcut icon" href="../img/h1.ico" />
 <link rel="stylesheet" href="../css/style.css"><!--se llama el stilo--> 
 <link rel="stylesheet" href="../css/styadminprincipal.css"><!--se llama el stilo--> 
+<title>Testamento</title>
+</head>
+<body>
 <?php 
    
    include_once('cuerpo/administradorprincipal.php');
 ?>
+</body>
+</html>

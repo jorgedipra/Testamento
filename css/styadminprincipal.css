@@ -8,12 +8,10 @@ html{
    position: absolute;
 
 }
-
-
 ul {
 	list-style: none;
 	width: 95%;
-	margin: 5% -50px;
+	margin: 15% -250px;
 	position: relative;
 }
 

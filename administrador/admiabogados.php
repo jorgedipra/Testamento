@@ -2,8 +2,9 @@
  include_once ('../recursos/info.php');//se llama la informacion de la pagina
 session_start();
 ?>
-
-
+<link rel="shortcut icon" href="../img/h1.ico" />
+<link rel="stylesheet" href="../css/style.css"><!--se llama el stilo--> 
+<link rel="stylesheet" href="../css/stylebenef.css"><!--se llama el stilo--> 
  <script type="text/javascript">
   function borrar(id){
     alert(document.getElementById(id).value);
@@ -13,8 +14,9 @@ session_start();
     } 
 }    
 </script>
-
-
+<title>Testamento</title>
+</head>
+<body>
 <?php 
  include_once('../conexion/php/operacionesSql.php');
   $objopera  =  new operaciones();
@@ -60,3 +62,5 @@ $resuabg=$objopera->buscar($buscarabg);
 include_once('cuerpo/admiabogados.php');
 
 ?>
+</body>
+</html>

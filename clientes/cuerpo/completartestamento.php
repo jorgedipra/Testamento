@@ -37,12 +37,12 @@ COMPLETAR TESTAMENTO
   ?> 
     </select>
     <br>
-    <input type="submit" value="Ingresar">
+    <input type="submit" value="Ingresar" class="button">
     </form>
 </section>
 
 
-<section>
+<section id="cuentas">
       Cuentas Asosiadoas
     <?php 
          while($res= $resultado->fetch_assoc())
@@ -59,7 +59,7 @@ COMPLETAR TESTAMENTO
        <label><?php echo $res['CntClave'];?></label>
        <br>
         <input type="hidden" id="idcuenta" value="<?php echo $res['CntId'];?>">
-       <a href="#" onClick="borrar(<?php echo $res['CntId'];?>)">Eliminar</a>
+       <a class="botton" href="#" onClick="borrar(<?php echo $res['CntId'];?>)" >Eliminar</a>
        <?php
 
        }

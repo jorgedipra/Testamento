@@ -2,6 +2,10 @@
  include_once ('../recursos/info.php');//se llama la informacion de la pagina
 session_start();
 ?>
+<link rel="shortcut icon" href="../img/h1.ico" />
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/stycompletestameto.css">
+
 <script type="text/javascript">
   function borrar(id){
     alert(document.getElementById(id).value);
@@ -16,9 +20,9 @@ session_start();
       $objopera  =  new operaciones();
   
   if(isset($_POST['cuenta'])){
-  	//$cuenta="INSERT INTO cuenta(CntNombre,CntCorreo,CntEntregado,CntClave)VALUES('".$_POST['cuenta']."','".$_POST['ctncorreo']."','".$_POST['encargado']."','".$_POST['ctnClave']."')";
+  	$cuenta="INSERT INTO cuenta(CntNombre,CntCorreo,CntEntregado,CntClave)VALUES('".$_POST['cuenta']."','".$_POST['ctncorreo']."','".$_POST['encargado']."','".$_POST['ctnClave']."')";
   	  
-  	// $objopera->insertar($cuenta);
+  	$objopera->insertar($cuenta);
      $maxid="SELECT MAX(CntId) as maxid1 FROM testamento.cuenta";
       $max=$objopera->buscar($maxid);
       $res1=  $max->fetch_object()->maxid1; 

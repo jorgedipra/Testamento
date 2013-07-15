@@ -21,6 +21,7 @@ include_once('conexion/php/operacionesSql.php');
   $objopera  =  new operaciones();
   if(isset($_POST['nick'])){
        $logeo="SELECT * FROM testamento.usuario WHERE UsrNick='".$_POST['nick']."' and UsrClave='".$_POST['clave']."'";
+       echo $logeo;
        $notifi=$objopera->buscar($logeo);
        while($res=$notifi->fetch_assoc()){
           $_SESSION['Nombre']=$res['UsrNombre'];
@@ -29,7 +30,7 @@ include_once('conexion/php/operacionesSql.php');
                 header('location: clientes/clientesprincipal.php');
             }
             elseif($res['TpIdUsrd']==2)
-            { echo "hola";
+            { 
             	header('location: administrador/administradorprincipal.php');
 
             }

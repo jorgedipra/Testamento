@@ -1,6 +1,11 @@
 <a href="clientesprincipal.php">Salir</a>
-
-ABOGADOS
+<center>
+<article id="verbene">
+<section id="verBienes">
+  <section id="contt">
+  <h2>ABOGADOS</h2>
+  
+  
 <?php 
   while($res=$resuabg->fetch_assoc())
      {
@@ -25,3 +30,7 @@ ABOGADOS
 <?php
 }
 ?>
+</select>
+</select>
+</article>
+</center>

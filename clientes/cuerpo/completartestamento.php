@@ -54,7 +54,15 @@ COMPLETAR TESTAMENTO
      <label><?php echo $res['CntNombre'];?></label>
      <br>
      <label>Encargado</label>
-     <label><?php echo $res['CntEntregado'];?></label>
+     <label><?php
+      $consulta="SELECT BenNombre as Max FROM beneficiario WHERE BenId='".$res['CntEntregado']."'";
+      
+        $max= $objopera->buscar($consulta);
+           $res1=  $max->fetch_object()->Max;
+           echo $res1; 
+      ?>
+
+     </label>
      <br>
      <label>clave</label>
        <label><?php echo $res['CntClave'];?></label>

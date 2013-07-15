@@ -1,3 +1,9 @@
+<?php
+ include_once ('../recursos/info.php');//se llama la informacion de la pagina
+session_start();
+?>
+<link rel="stylesheet" href="../css/style.css">
+
 <?php 
 
  include_once('../conexion/php/operacionesSql.php');

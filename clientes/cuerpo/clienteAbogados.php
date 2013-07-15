@@ -7,7 +7,7 @@ ABOGADOS
 
 ?>
      	<br>
-	<img src="<?php echo $res['AbgFoto']; ?>">
+	<img src="<?php echo $res['AbgFoto']; ?>"  width="150px">
 		<br>
 	<label>Nombre</label>
 

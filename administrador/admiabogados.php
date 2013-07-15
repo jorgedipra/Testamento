@@ -22,24 +22,26 @@ session_start();
   $objopera  =  new operaciones();
 if(isset($_POST['targeta'])){
    $verificar="SELECT * FROM testamento.abogados WHERE AbgTargeta='".$_POST['targeta']."'";
-  $confirabg=$abjopera->buscar($verificar);
+    $confirabg = $objopera ->buscar($verificar);
 
   if($confirabg){
 
 
-  if($_FILES['foto']['tmp_name']!=""){
+  if($_FILES['fotoabg']['tmp_name']!=""){
     $prefijo = substr(md5(uniqid(rand())),0,6);
     $destino =  "../img/fotosabogados/".$prefijo."_".$_FILES['fotoabg']['name'];
-    $destinoF = '/img/fotosabogados/'.$prefijo."_".$_FILES['fotoabg']['name'];
-    copy($_FILES['foto']['tmp_name'],$destino);
-     $inabogados="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbTargeta,AbgFoto,AbgPerfil)
+    $destinoF = '/www/Testamento (GitHub for Windows)/img/fotosabogados/'.$prefijo."_".$_FILES['fotoabg']['name'];
+    copy($_FILES['fotoabg']['tmp_name'],$destino);
+     $inabogados="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbgTargeta,AbgFoto,AbgPerfil)
      VALUES('".$_POST['nomabo']."','".$_POST['telabo']."','".$_POST['correoabg']."','".$_POST['targeta']."','".$destinoF."','".$_POST['perfilabg']."')";
-     $objoper->insertar($inabogados);
+ 
+     $objopera->insertar($inabogados);
       echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
                               }  
   else{
-  	$inseaboaux="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbTargeta,AbgPerfil)
+  	$inseaboaux="INSERT INTO Abogados(AbgNombre,AbgTelefono,AbgCorreo,AbgTargeta,AbgPerfil)
    VALUES('".$_POST['nomabo']."','".$_POST['telabo']."','".$_POST['correoabg']."','".$_POST['targeta']."','".$_POST['perfilabg']."')";
+   echo $inseaboux;
     $objoper->insertar($inseaboaux);
       echo " <script type='text/javascript'> alert('YA Insertado correctamente');</script>";
   }

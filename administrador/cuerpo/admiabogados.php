@@ -47,13 +47,15 @@
 <section id="verBienes">
   <section id="contt">
   <h2>Ver Abgados</h2>
+  
+   <div id="paging_container7">
     <section id="verabogados">
 
       <?php 
          while($res=$resuabg->fetch_assoc())
            {
             ?>
-                 <img src="<?php echo $res['AbgFoto']; ?>">
+                 <img src="<?php echo $res['AbgFoto']; ?>"  width="150px" >
                    <br>
                    <br>
                    <label>Nombre:</label>                    

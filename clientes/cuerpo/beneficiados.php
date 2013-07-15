@@ -46,7 +46,7 @@
 <section id="verbene">
   <section id="contt">
    <h2> Ver Beneficiados</h2>
-    <br>
+    <br> 
     <br>
     <div id="paging_container7">
       <ul class="content">

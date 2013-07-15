@@ -1,3 +1,5 @@
+BIENVENIDO <?php echo  $_SESSION['Nombre'];?>
+
 <ul>
 	<a href="clienteAbogados.php"><li id="Abogados">
 		<h3>Abogados</h3>
